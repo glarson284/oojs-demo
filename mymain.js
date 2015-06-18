@@ -19,7 +19,8 @@ Pirate.prototype.enough = function(){
 		}
 };
 
-function DeckPirate(){
+function DeckPirate(pretty){
+	this.pretty = pretty;
 	this.swabTheDeck = function (){
 		if (this.bottles > 2){
 			console.log("you have to swabbed the deck ye lazy scoundral");
@@ -32,7 +33,7 @@ function DeckPirate(){
 }
 DeckPirate.prototype = new Pirate("rum",0);
 
-whitebeard = new DeckPirate();
+whitebeard = new DeckPirate("so pretty");
 
 
 
